@@ -13,7 +13,7 @@ const char* password = "password-wifi";
 
 void setup() {
     Serial.begin(9600);
-    Serial1.begin(9600);
+    Serial1.begin(115200);
     
     WiFi.init(&Serial1);
     Serial.print("Connecting to "); 
@@ -29,5 +29,3 @@ void setup() {
 
 void loop() {
 }
-
-
